@@ -1,8 +1,8 @@
 // ------------- CloudFormation ------------- //
-export const STACK_NAME = 'MinecraftVanilla';
+export const STACK_NAME = 'ArkSurvivalEvolved';
 
-// ------------- Discord ------------- //
-export const DISCORD_COMMAND_PREFIX = 'mc';
+// -------------- Discord ------------- //
+export const DISCORD_COMMAND_PREFIX = 'ark';
 
 // -------------- Server Executable ------------- //
 // If set to true, /minecloud_configs/server/server.zip will be deployed
@@ -10,13 +10,13 @@ export const DEPLOY_LOCAL_SERVER_EXECUTABLE = false;
 
 // ----------------EC2 Machine Settings-------------------- //
 // EC2 max price per hours, in dollars
-export const MAX_PRICE = 0.1;
+export const MAX_PRICE = 0.2;
 // EC2 instance type, refer to https://aws.amazon.com/ec2/instance-types/ for more info
-export const EC2_INSTANCE_TYPE = 't2.large';
+export const EC2_INSTANCE_TYPE = 't2.xlarge';
 // Disk size, in GB
-export const EC2_VOLUME = 16;
+export const EC2_VOLUME = 8;
 // Init time out, in minutes
-export const EC2_INIT_TIMEOUT = 15;
+export const EC2_INIT_TIMEOUT = 25;
 
 // --------------- Backup Settings------------------ //
 // At most how many backups

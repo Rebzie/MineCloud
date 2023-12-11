@@ -2,9 +2,7 @@
 
 import {
     InitCommand,
-    InitConfig,
-    InitFile,
-    InitPackage
+    InitFile
   } from 'aws-cdk-lib/aws-ec2';
 
 export function setUpShellScript(

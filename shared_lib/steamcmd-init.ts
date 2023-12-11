@@ -1,6 +1,5 @@
 import {
     InitCommand,
-    InitConfig,
     InitFile,
     InitPackage
 } from 'aws-cdk-lib/aws-ec2';

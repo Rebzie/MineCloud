@@ -7,6 +7,7 @@ MineCloud is an on-demand multiplayer server hosting solution based on AWS CDK (
 - [*Minecraft*](/minecloud_configuration_packages/Minecraft/README.md)
 - [*Factorio*](/minecloud_configuration_packages/Factorio/README.md)
 - [*Terraria*](/minecloud_configuration_packages/Terraria/README.md)
+- [*Ark Survival Evolved*](/minecloud_configuration_packages/ArkSurvivalEvolved/README.md)
 - *more to add...*
 
 *Don’t see your favorite games? Consider contributing to the list by following the [Create and publish your own MineCloud Configuration Packages](/minecloud_configuration_packages/CustomConfigurationPackageGuides.md) guides!*
