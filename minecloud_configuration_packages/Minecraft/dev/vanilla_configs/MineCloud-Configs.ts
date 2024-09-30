@@ -4,6 +4,7 @@ export const STACK_NAME = 'Minecraft';
 // -------------- Server Executable ------------- //
 // If set to true, /minecloud_configs/server/server.zip will be deployed
 export const DEPLOY_LOCAL_SERVER_EXECUTABLE = false;
+export const DOWNLOAD_FORGE = true
 
 // ----------------EC2 Machine Settings-------------------- //
 // EC2 max price per hours, in dollars

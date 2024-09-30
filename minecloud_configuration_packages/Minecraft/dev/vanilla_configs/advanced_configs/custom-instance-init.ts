@@ -5,8 +5,8 @@ import {
   InitPackage
 } from 'aws-cdk-lib/aws-ec2';
 import { MINECLOUD_SERVER_DIR } from '../../lib/const/minecloud-dir';
-import { DEPLOY_LOCAL_SERVER_EXECUTABLE } from '../MineCloud-Configs';
-import { MINECRAFT_SERVER_DOWNLOAD_URL } from './minecraft-server-download-url';
+import { DEPLOY_LOCAL_SERVER_EXECUTABLE, DOWNLOAD_FORGE } from '../MineCloud-Configs';
+import { FORGE_DOWNLOAD_URL, MINECRAFT_SERVER_DOWNLOAD_URL_1_20_1 } from './minecraft-server-download-url';
 
 export const CUSTOM_INIT_CONFIG: InitConfig = getCustomInitConfig();
 
@@ -23,7 +23,16 @@ function getCustomInitConfig(): InitConfig {
     configs.push(
       InitFile.fromUrl(
         `${MINECLOUD_SERVER_DIR}/server.jar`,
-        MINECRAFT_SERVER_DOWNLOAD_URL
+        MINECRAFT_SERVER_DOWNLOAD_URL_1_20_1
+      )
+    );
+  }
+
+  if (DOWNLOAD_FORGE) {
+    configs.push(
+      InitFile.fromUrl(
+        `${MINECLOUD_SERVER_DIR}/forge.jar`,
+        FORGE_DOWNLOAD_URL
       )
     );
   }
